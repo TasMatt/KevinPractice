@@ -35,13 +35,14 @@ public class ParabankLoginSteps extends WebDriverTestCase
 
         loginPage.waitForPageToLoad();
 
-        //Validator.verifyTrue(true, "fail", "sccess"); // will fails the steps but continue the rest
+        Validator.verifyTrue(true, "fail", "sccess"); // will fails the steps but continue the rest
 
         Validator.assertTrue(loginPage.labelUserName.getText().contentEquals("Username"),
                 "usrname label displayed is incorrect the actual label is "+loginPage.labelUserName.getText(),"usrname label displayed currectly");
 
         loginPage.labelUserName.verifyText("Username2", "username label");
 
+        System.out.println("Just checking github here ");
 
 
 
