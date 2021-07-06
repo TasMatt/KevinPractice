@@ -107,4 +107,10 @@ public class LoginSteps extends WebDriverTestCase
         Validator.assertTrue(loginPage.textBoxPassWord.isPresent(),"Password textbox does not display","Password textbox displays");
     }
 
+    @QAFTestStep(description = "User logs into application using {username} and {password}")
+    public static void loginInOne(String strUsername, String strPassword) {
+
+
+    }
+
 }

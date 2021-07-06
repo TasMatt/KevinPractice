@@ -16,4 +16,10 @@ public class BasePage extends WebDriverBaseTestPage<WebDriverTestPage>
 		
 	}
 
+	@FindBy(locator = "xpath=(//a[text()='About Us'])[1]")
+	public QAFWebElement linkAboutUs;
+
+
+
+
 }
